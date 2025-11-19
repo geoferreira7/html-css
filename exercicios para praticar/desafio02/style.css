@@ -1,0 +1,64 @@
+@charset  "UTF-8";
+
+body {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+.card {
+    font-family: poppins, sans-serif;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 400px; /* ajuste conforme necessário */
+    display: flex; /* torna o card um contêiner flexível */
+    flex-direction: column; /* organiza os itens em coluna */
+    justify-content: space-between; /* espaça os itens igualmente */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-bottom: #000000de solid 1px;
+    
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a739;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; /* muda o cursor para indicar que é clicável */
+    
+}
+
+.info {
+    font-family: Arial, Helvetica, sans-serif, serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #000000de;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    gap: 10px; /* espaço entre os cards */
+    justify-content: center; /* centraliza os cards */
+}
+
+button:hover {
+    background-color: #0bea29;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte em CSS</title>
+    <style>
+        body {
+            font-family: 'poppins', Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, vmin, vmax, %
+            16px geralmente = 1em ou 1rem
+            */ 
+            font-size: 1.5em; /*  1,5 do tamanho padrão 16px*/
+            font-style: normal /* Estilo da fonte */
+        }
+
+        h1, h2 {
+            /* shorthand font
+            - font-style -> font- weight -> font-size -> font-family
+            font-style: normal | italic | oblique
+            font-weight: normal | bold | bolder | lighter | 100 a 900
+            font-size: 2em | 20px | 1.5rem |
+            font-family: 'Poppins', sans-serif;
+            */
+            font: italic bold 2em 'poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum sit rem rerum, illum excepturi nihil blanditiis atque nemo provident eos minus non dignissimos quam, in error libero ipsa odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto explicabo illo id eaque, obcaecati esse. Eum praesentium recusandae molestias possimus optio accusamus ex, consequuntur maiores temporibus nesciunt ad doloremque similique.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam ex dolore aspernatur assumenda libero distinctio veniam est, laudantium facilis autem omnis totam, facere tempore quia fugiat laboriosam quisquam debitis sunt?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis distinctio, tempore pariatur natus expedita ad ex cumque? Modi nam sequi nulla cupiditate nemo dignissimos, veniam harum, rerum eos, error in?</p>
+</body>
+</html>

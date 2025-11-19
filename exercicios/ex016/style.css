@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+    font-family: poppins, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+body {
+    background-image: linear-gradient(to bottom, #3D667B , #377FA6,#364751,#2A3033,#292F33);
+}
+
+main{
+    background-color: white;
+    width: 600px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #292F33;
+}
+
+h1{
+    text-align: center;
+    color: #292F33;
+    text-shadow: 1px 1px 2px #1a1d20;
+}
+
+h2{
+    text-align: center;
+    color: #3D667B;
+}
+p{
+    text-align: justify;
+}

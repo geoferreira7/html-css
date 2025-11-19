@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body { 
+            font-family:  poppins, Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+
+        header { 
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.315);
+        }
+
+        nav {
+            background-color: rgb(102,102,102);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.315);
+            border-radius: 5px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 4px 4px 9px 0px rgba(0,0,0,0.385);
+        }
+
+        article {
+          text-align: justify;
+          background-color: rgb(220, 220, 220);
+          padding: 10px;
+        }
+
+        article.brasil {
+            border-radius: 5px;
+        }
+
+        article.mundo {
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link </a>
+            <a href="#">Link </a>
+            <a href="#">Link </a>
+            <a href="#">Link </a>   
+            <a href="#">Link </a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section>
+            <article class="brasil">
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, cupiditate! Error fuga debitis omnis dolore tenetur, neque nisi, id accusantium fugiat voluptate quam expedita tempore explicabo aspernatur aliquam, necessitatibus voluptatibus.</p>
+                <aside>
+                    <code>Artigo escrito por José da Silva</code>
+                </aside>
+            </article>
+            
+            <article class="mundo">
+                <h2>Notícias sobre o Mundo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, cupiditate! Error fuga debitis omnis dolore tenetur, neque nisi, id accusantium fugiat voluptate quam expedita tempore explicabo aspernatur aliquam, necessitatibus voluptatibus.</p>
+                <aside>
+                    <code>Artigo escrito por Maria de Souza</code>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> 
+        <code>Desenvolvido por Geovanni Ferreira
+        2025 - Todos os direitos reservados.</code>
+    </footer>
+
+</body>
+</html>

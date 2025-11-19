@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES DE LINKS
+           # = ID
+           . = CLASSE
+           : = PSEUDO-CLASSES
+           :: PSEUDO-ELEMENTOS
+           > = FILHO DIRETO
+           + = IRMÃO IMEDIATO
+        
+        */
+        body { 
+            font-family: poppins, Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-transform: uppercase; /* Transforma o texto em maiúsculas */
+            border-style: solid;
+            border-width: 0px;
+            padding: 10px;
+            background-color: rgb(185, 185, 185); /* Fundo branco */
+            border-radius: 20px; /* Bordas arredondadas */
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold; /* Deixa o texto em negrito */
+            font-size: 20px;
+            letter-spacing: 3px; /* Adiciona espaçamento de 5px entre letras */
+            line-height: 35px; /* Aumenta o espaçamento entre linhas */
+            transition: color 0.3s ease; /* Transição suave para a cor */
+        }
+        
+        li {
+            list-style: none;
+            text-align: center;
+            margin: 10px;
+
+        }
+
+        a:visited
+        {
+            color: rgb(0, 0, 0);
+        }
+
+        a:hover {
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+        }
+
+       
+        .insta {
+            background-color: rgb(255, 0, 204);
+            padding: 5px;
+            border-radius: 20px;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+         a:active.insta {
+            color: rgb(255, 0, 204);
+        }
+        .insta::before{
+            content: '✱';
+        }       
+        .insta::after{
+            content: '✱';
+        } 
+        
+
+        a.git {
+            color: rgb(255, 255, 255);
+        }
+         a:active.git {
+            color: rgb(0, 0, 0);
+        }
+        .git {
+            background-color: rgb(0, 0, 0);
+            padding: 5px;
+            border-radius: 20px;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+        .git::before{
+            content: '✱';
+        }
+        .git::after{
+            content: '✱';
+        }
+
+
+        a.especial {
+            color: rgb(255, 255, 255);
+        }
+         a:active.especial{
+            color: blue
+        }
+        .especial {
+            background-color: rgb(48, 11, 213);
+            padding: 5px;
+            border-radius: 20px;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+        .especial::before{
+            content: '✱';
+        }
+        .especial::after{
+            content: '✱';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/geoferreira7" target="_blank" rel="external" class="git"> Repositório GitHub</a>
+        <li><a href="https://www.instagram.com/geoferreira7/" target="_blank" rel="external" class="insta"> Perfil do Instagram </a>
+        <li><a href="https://www.linkedin.com/in/geovanni-ferreira-727a3515a/" target="_blank" rel="external" class="especial"> Meu Linkedin</a>
+    </ul>
+</body>
+</html>

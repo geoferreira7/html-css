@@ -1,0 +1,126 @@
+@charset   "UTF-8";
+
+header {
+    background-color: #f8f9fa;
+    border: 5px solid #343a40;
+    padding: 10px;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px; /* Espaço para o menu fixo */
+    font-family: Arial, sans-serif;
+    background: #e9ecef;
+}
+
+h2, h3 {
+    color: #343a40;
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.layout {
+    display: flex;
+    margin-top: 70px; /* altura do header fixo */
+}
+
+.sidebar {
+    flex-shrink: 0;
+    position: fixed;
+    left: 0;
+    top: 70px; /* abaixo do menu fixo */
+    width: 180px;
+    height: 100%;
+    background: #343a40;
+    color: #fff;
+    padding: 20px 10px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding: 30px 20px 20px 200px; /* espaço para sidebar */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 10px;
+}
+
+.card {
+    background: #fff;
+    border: 2px solid #343a40;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 700px) {
+    .layout {
+        flex-direction: column;
+    }
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+    main {
+        padding: 20px 10px;
+    }
+    .projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+

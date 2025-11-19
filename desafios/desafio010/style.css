@@ -1,0 +1,155 @@
+@charset    "UTF-8";
+
+@font-face {
+    font-family: 'indroid';
+    src: url('fontes/idroid.otf') format('woff2'),
+        url('fontes/idroid.ttf') format('truetype');    
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+h2 {
+    font-family: indroid;
+    color: #015828;
+}
+main h3 {
+    font-family: indroid;
+    color: #015828;
+    background: linear-gradient(to right, #a1c7b37a, #ffffff);
+    margin: 2px 0; 
+    padding: 0px;
+}
+
+body {
+    background: #c0ffdc;
+    margin: 0;
+    padding: 0;
+    
+}
+header {
+    background: radial-gradient(circle, #00b552, #015828);
+    color: white;
+    text-align: justify;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+   
+}
+nav, nav a {
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    border: white 2px solid;
+    background: white;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.video {
+    background-color: #015828;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+    max-width: auto;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+section {
+    background: #c2fadb;
+    color: rgb(0, 0, 0);
+    margin: 20px 0;
+    padding: 0px 10px 10px 10px;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+section h3 {
+    color: rgb(255, 255, 255);
+    background-color: #015828;
+    margin: 0 -10px 10px -10px;
+    padding: 10px;
+    border-radius: 5px 5px 0 0 ;
+    
+}
+.negrito {
+    font-weight: bold;
+}
+
+.aprenda-mais ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 30px;
+    list-style-position: inside;
+    list-style-type: none; /* Adicione esta linha */
+}
+
+.aprenda-mais ul a {
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.aprenda-mais h3 {
+    font-family: poppins, Arial, Helvetica, sans-serif;
+}
+
+.verde {
+    color: rgb(0, 152, 5);
+    font-weight: bold;
+}
+a {
+    color: #015828;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+mark {
+    background: #a1c7b37a;
+    color: white;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+footer {
+    text-align: center;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: white;
+    background: #015828;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .aprenda-mais ul {
+        column-count: 1 !important;
+        grid-template-columns: 1fr !important;
+    }
+}
